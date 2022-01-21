@@ -1,0 +1,583 @@
+[29-Jan-2021 12:17:55 UTC] PHP Warning:  require_once(/var/app/current/system/startup.php): failed to open stream: No such file or directory in /home/trupik/public_html/www.trupikfood.com/index.php on line 17
+[29-Jan-2021 12:17:55 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/app/current/system/startup.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/trupik/public_html/www.trupikfood.com/index.php on line 17
+[29-Jan-2021 12:17:56 UTC] PHP Warning:  require_once(/var/app/current/system/startup.php): failed to open stream: No such file or directory in /home/trupik/public_html/www.trupikfood.com/index.php on line 17
+[29-Jan-2021 12:17:56 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/app/current/system/startup.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/trupik/public_html/www.trupikfood.com/index.php on line 17
+[01-Feb-2021 14:22:02 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 14030848 bytes) in /home/trupik/public_html/www.trupikbasket.com/system/library/image.php on line 45
+[01-Feb-2021 15:54:06 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 14030848 bytes) in /home/trupik/public_html/www.trupikbasket.com/system/library/image.php on line 45
+[08-Feb-2021 11:35:29 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/trupik/public_html/www.trupikbasket.com/catalog/language/en-gb/common/header.php on line 17
+[08-Feb-2021 11:35:53 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/trupik/public_html/www.trupikbasket.com/catalog/language/en-gb/common/header.php on line 17
+[08-Feb-2021 11:36:03 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/trupik/public_html/www.trupikbasket.com/catalog/language/en-gb/common/header.php on line 17
+[08-Feb-2021 11:36:25 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/trupik/public_html/www.trupikbasket.com/catalog/language/en-gb/common/header.php on line 17
+[09-Feb-2021 07:22:35 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[09-Feb-2021 07:22:53 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[09-Feb-2021 07:27:49 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[09-Feb-2021 07:28:10 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[09-Feb-2021 11:57:49 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/model/catalog/review.php(36): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelCatalogReview->addReview('155', Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/product/product.php(687): Proxy->__call('addReview', Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerProductProduct->write()
+#6 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#7 /home/trupik/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[09-Feb-2021 11:57:55 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/model/catalog/review.php(36): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelCatalogReview->addReview('155', Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/product/product.php(687): Proxy->__call('addReview', Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerProductProduct->write()
+#6 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#7 /home/trupik/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[09-Feb-2021 11:59:06 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/model/catalog/review.php(36): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelCatalogReview->addReview('155', Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/product/product.php(687): Proxy->__call('addReview', Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerProductProduct->write()
+#6 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#7 /home/trupik/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[09-Feb-2021 11:59:10 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/model/catalog/review.php(36): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelCatalogReview->addReview('155', Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/product/product.php(687): Proxy->__call('addReview', Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerProductProduct->write()
+#6 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#7 /home/trupik/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[09-Feb-2021 11:59:12 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/model/catalog/review.php(36): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelCatalogReview->addReview('155', Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/product/product.php(687): Proxy->__call('addReview', Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerProductProduct->write()
+#6 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#7 /home/trupik/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[09-Feb-2021 11:59:13 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/model/catalog/review.php(36): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelCatalogReview->addReview('155', Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/product/product.php(687): Proxy->__call('addReview', Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerProductProduct->write()
+#6 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#7 /home/trupik/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[09-Feb-2021 12:03:33 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/model/catalog/review.php(36): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelCatalogReview->addReview('154', Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/product/product.php(687): Proxy->__call('addReview', Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerProductProduct->write()
+#6 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#7 /home/trupik/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[09-Feb-2021 21:29:43 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[10-Feb-2021 02:17:33 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[10-Feb-2021 02:57:01 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[10-Feb-2021 07:04:57 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[11-Feb-2021 02:04:26 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[11-Feb-2021 06:43:53 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[11-Feb-2021 12:07:19 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[11-Feb-2021 19:13:58 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[11-Feb-2021 21:05:23 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[12-Feb-2021 06:18:52 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[12-Feb-2021 07:06:48 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/catalog/controller/information/contact.php(30): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerInformationContact->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/router.php(25): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home/trupik/public_html/ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[12-Feb-2021 07:28:15 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#7 /home/trupik/public in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[12-Feb-2021 08:22:29 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#7 /home/trupik/public in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[12-Feb-2021 08:28:50 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#7 /home/trupik/public in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[12-Feb-2021 08:36:37 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#7 /home/trupik/public in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[12-Feb-2021 08:36:54 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#7 /home/trupik/public in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[12-Feb-2021 08:51:23 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#7 /home/trupik/public in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[12-Feb-2021 08:55:00 UTC] PHP Fatal error:  Uncaught Exception: Error: EHLO not accepted from server! in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:157
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Ar in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 157
+[12-Feb-2021 08:58:42 UTC] PHP Fatal error:  Uncaught Exception: Error: EHLO not accepted from server! in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:120
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Ar in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 120
+[12-Feb-2021 09:37:16 UTC] PHP Fatal error:  Uncaught Exception: Error: EHLO not accepted from server! in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:120
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Ar in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 120
+[12-Feb-2021 09:59:22 UTC] PHP Fatal error:  Uncaught Exception: Error: EHLO not accepted from server! in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:120
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Ar in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 120
+[12-Feb-2021 12:09:16 UTC] PHP Fatal error:  Uncaught Exception: Error:  () in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#7 /home/trupik/public_ in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[12-Feb-2021 12:10:32 UTC] PHP Fatal error:  Uncaught Exception: Error:  (0) in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php:90
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#7 /home/trupik/public in /home/trupik/public_html/www.trupikbasket.com/system/library/mail/smtp.php on line 90
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_translation WHERE store_id = '0' AND language_id = '1' AND (route = 'common/maintenance' OR route = 'en-gb') in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM o...')
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/model/design/translation.php(6): DB->query('SELECT * FROM o...')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelDesignTranslation->getTranslations('common/maintena...')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/event/translation.php(6): Proxy->__call('getTranslations', Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modificati in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 40
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: MySQL server has gone away<br />Error No: 2006<br />SELECT tr1.tax_class_id, tr2.tax_rate_id, tr2.name, tr2.rate, tr2.type, tr1.priority FROM oc_tax_rule tr1 LEFT JOIN oc_tax_rate tr2 ON (tr1.tax_rate_id = tr2.tax_rate_id) INNER JOIN oc_tax_rate_to_customer_group tr2cg ON (tr2.tax_rate_id = tr2cg.tax_rate_id) LEFT JOIN oc_zone_to_geo_zone z2gz ON (tr2.geo_zone_id = z2gz.geo_zone_id) LEFT JOIN oc_geo_zone gz ON (tr2.geo_zone_id = gz.geo_zone_id) WHERE tr1.based = 'shipping' AND tr2cg.customer_group_id = '1' AND z2gz.country_id = '99' AND (z2gz.zone_id = '0' OR z2gz.zone_id = '1486') ORDER BY tr1.priority ASC in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(45): DB\MySQLi->query('SELECT tr1.tax_...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/library/cart/tax.php(16): DB->query('SELECT tr1.tax_...')
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/co in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 40
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_translation WHERE store_id = '0' AND language_id = '1' AND (route = 'common/maintenance' OR route = 'en-gb') in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM o...')
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/model/design/translation.php(6): DB->query('SELECT * FROM o...')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelDesignTranslation->getTranslations('common/maintena...')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/event/translation.php(6): Proxy->__call('getTranslations', Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modificati in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 40
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_currency in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM o...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/library/cart/currency.php(10): DB->query('SELECT * FROM o...')
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/startup.php(160): Cart\Currency->__construct(Object(Registry))
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupStartup->index()
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(46): Router->execute(Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dis in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 40
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_translation WHERE store_id = '0' AND language_id = '1' AND (route = 'common/maintenance' OR route = 'en-gb') in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM o...')
+#1 /home/trupik/public_html/www.trupikbasket.com/catalog/model/design/translation.php(6): DB->query('SELECT * FROM o...')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelDesignTranslation->getTranslations('common/maintena...')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/event/translation.php(6): Proxy->__call('getTranslations', Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/system/storage/modificati in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 40
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_currency in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM o...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/library/cart/currency.php(10): DB->query('SELECT * FROM o...')
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/startup.php(160): Cart\Currency->__construct(Object(Registry))
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupStartup->index()
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(46): Router->execute(Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dis in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 40
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_currency in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:40
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(45): DB\MySQLi->query('SELECT * FROM o...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/library/cart/currency.php(10): DB->query('SELECT * FROM o...')
+#2 /home/trupik/public_html/www.trupikbasket.com/catalog/controller/startup/startup.php(160): Cart\Currency->__construct(Object(Registry))
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupStartup->index()
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(46): Router->execute(Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dis in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 40
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[25-Apr-2021 01:15:24 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/www.trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/www.trupikbasket.com/system/library/db/mysqli.php on line 10
+[17-May-2021 05:12:39 UTC] PHP Warning:  require_once(/home/trupik/public_html/www.trupikbasket.com/system/startup.php): failed to open stream: No such file or directory in /home/trupik/public_html/trupikbasket.com/index.php on line 17
+[17-May-2021 05:12:39 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/trupik/public_html/www.trupikbasket.com/system/startup.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/trupik/public_html/trupikbasket.com/index.php on line 17
+[17-May-2021 05:13:42 UTC] PHP Warning:  require_once(/home/trupik/public_html/www.trupikbasket.com/system/startup.php): failed to open stream: No such file or directory in /home/trupik/public_html/trupikbasket.com/index.php on line 17
+[17-May-2021 05:13:42 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/trupik/public_html/www.trupikbasket.com/system/startup.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/trupik/public_html/trupikbasket.com/index.php on line 17
+[24-May-2021 00:16:08 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/trupikbasket.com/system/library/db/mysqli.php on line 10
+[24-May-2021 00:16:08 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/trupikbasket.com/system/library/db/mysqli.php on line 10
+[28-May-2021 00:15:33 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/trupikbasket.com/system/library/db/mysqli.php on line 10
+[28-May-2021 00:15:33 UTC] PHP Fatal error:  Uncaught Exception: Error: <br />Error No:  in /home/trupik/public_html/trupikbasket.com/system/library/db/mysqli.php:10
+Stack trace:
+#0 /home/trupik/public_html/trupikbasket.com/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#1 /home/trupik/public_html/trupikbasket.com/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'trupik_basket', 'Tr#$(bshet', 'trupik_basket', '3306')
+#2 /home/trupik/public_html/trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...')
+#3 /home/trupik/public_html/trupikbasket.com/index.php(19): start('catalog')
+#4 {main}
+  thrown in /home/trupik/public_html/trupikbasket.com/system/library/db/mysqli.php on line 10
+[18-Jun-2021 11:39:05 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 14030848 bytes) in /home/trupik/public_html/trupikbasket.com/system/library/image.php on line 45

@@ -1,0 +1,737 @@
+{{ header }} {{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <h1>{{ heading_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %} 
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid" id="smsalert_setting_pg">
+    {% if error_warning %} 
+    <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %} 
+	{% if success %}
+    <div class="alert alert-success"><i class="fa fa-check-circle"></i> {{ success }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+      </div>
+      <div class="panel-body">
+        <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-module" class="form-horizontal">
+		  <ul class="nav nav-tabs">
+             <li class="config active"><a href="{{co_action}}">{{tab_config}}</a></li>
+            <li class="customer"><a href="{{c_action}}">{{tab_customer}}</a></li>
+            <li class="admin"><a href="{{a_action}}">{{tab_admin}}</a></li>
+            <li class="otp"><a href="{{o_action}}">{{tab_otp}}</a></li>
+			<li class="advance"><a href="{{adv_action}}">{{tab_setting}}</a></li>
+			<li class="subscribe"><a href="{{sub_action}}">{{tab_subscribe}}</a></li>
+			<li class="support"><a href="{{s_action}}">{{tab_support}}</a></li>
+          </ul>
+		  <div class="tab-content">
+		    <div class="tab-pane active" id="config">
+				
+				 <div class="col-sm-12">
+					<div class="panel panel-default panel-floating panel-floating-inline">
+					<div class="panel-body">
+					  <div class="form-group">
+						<label for="input-auth-key" class="col-sm-2">{{ entry_auth_key }}</label>
+						<div class="col-sm-10">
+						{% if smsalert_auth_key != '' %}
+						{{smsalert_auth_key}} 
+						<input type="hidden" name="smsalert_auth_key" value="{{smsalert_auth_key}}">
+						{% else %}
+						  <input type="text" name="smsalert_auth_key" value="{{ smsalert_auth_key }}" id="input-auth-key" class="form-control"/>
+						  {% endif %}
+						</div>
+					  </div>
+					  
+					  <div class="form-group">
+						<label for="input-auth-secret" class="col-sm-2">{{ entry_auth_secret }}</label>
+						<div class="col-sm-10">
+						{% if smsalert_auth_secret != '' %}
+						{{smsalert_auth_secret}} 
+						<input type="hidden" name="smsalert_auth_secret" value="{{smsalert_auth_secret}}">
+						{% else %}
+						  <input type="text" name="smsalert_auth_secret" value="{{ smsalert_auth_secret }}" id="input-auth-secret" class="form-control"/>
+						  <input type="hidden" name="module_smsalert_status" value="1" />
+						  {% endif %}
+						</div>
+					  </div>
+					  {% if smsalert_auth_secret == '' %}
+					  <div class="form-group">
+						<div class="col-sm-10">
+						<button type="button" class="btn btn-primary" onclick="verifyCredential()" id="verify_btn"> Verify &amp; Continue</button>
+						  <span>Don't have an account on SMS Alert? <a class="Polaris-Link" href="http://www.smsalert.co.in/#register" target="_blank">Signup Here for FREE</a></span>
+						</div>
+					  </div>
+					  {% endif %}
+					  <div class="form-group">
+						<label for="input-default" class="col-sm-2">{{ entry_default_senderid }}</label>
+						<div class="col-sm-10">
+						{% if smsalert_default_senderid != '' %}
+						{{smsalert_default_senderid}} 
+						<input type="hidden" name="smsalert_default_senderid" value="{{smsalert_default_senderid}}">
+						{% else %}
+						<select name="smsalert_default_senderid" id="senderid" class="form-control">
+							<option value="">Select Senderid</option>
+						  </select>
+						  {% endif %}
+						  </div>
+					  </div>
+					  <!--Added on 06-05-2019 -->
+						<div class="form-group">
+						<label for="input-country" class="col-sm-2">{{ entry_country }}</label>
+						<div class="col-sm-10">
+						  <select name="smsalert_country" id="default_country_code" class="form-control" onchange="choseMobPattern(this)">
+						  {% for country in countries %}
+							<option value="{{ country.countryCode }}" data-pattern="{{ country.pattern }}"
+							{% if country.countryCode == smsalert_country %}
+							selected="selected"
+							{% elseif country.countryCode == '' %}
+							selected="selected"
+							{% endif %}
+							>{{ country.name }}</option>
+							{% endfor %}
+						  </select>
+						  
+						  <input type="hidden" name="smsalert_mobile_pattern" id="smsalert_mobile_pattern" value="{{ smsalert_mobile_pattern }}"/>
+						  
+						</div>
+					  </div>
+					  <!--closed Added on 06-05-2019 -->
+					  <div class="form-group">
+						<label for="smsalert_admin_number" class="col-sm-2">{{ entry_admin }}</label>
+						 {% if vendor_plugin != '' %}
+						<div class="col-sm-2">
+						<select name="smsalert_admin_type" id="smsalert_admin_type" class="form-control" onchange="addVendor(this)">
+						  <option value="">Custom</option>
+						  <option value="vendor">Vendor</option>
+						 </select>
+						</div>
+						{% endif %}
+						<div class="col-sm-8">
+						  <input type="hidden" name="smsalert_admin_number" value="{{ smsalert_admin_number }}" id="smsalert_admin_number" class="form-control"/>
+						</div>
+					  </div>
+					 
+					  <div class="form-group">
+						<label for="input-debug" class="col-sm-2">SMS Credits</label>
+						<div class="col-sm-10">
+						 {{ sms_credit }}
+						</div>
+					  </div>
+					  <div class="form-group">
+					   {% if smsalert_auth_secret != '' %}
+					  <div class="col-sm-2">
+						<button type="button" class="btn btn-danger" onclick="deleteData()" id="logout"> Logout</button>
+						</div>
+					  {% endif %}
+					  <div class="col-sm-10 text-right">
+						  <button type="button" id="button-update" class="btn btn-primary" {{smsalert_auth_secret!='' ? '' : 'disabled=true' }}><i class="fa fa-save"></i></button>
+						</div>
+						</div>
+					 </div>
+				   </div>
+				</div>
+			</div>
+			
+			
+            <div class="tab-pane table-responsive" id="customer">
+			<div class="pull-right" style="margin-bottom:10px;">
+		      <a href="index.php?route=extension/module/smsalert/insert&user_token={{ user_token }}&customer_notify=1&otp_template=0" title="Add Customer Template" data-toggle="tooltip" class="btn btn-success"><i class="fa fa-plus"></i></a></div>
+			  <table class="table table-bordered table-hover">
+				<thead>
+				<tr>
+				  <td width="1" style="text-align: center;"><input type="checkbox" onclick="$('input[name*=\'selected\']').attr('checked', this.checked);" /></td>
+				 <td class="text-left">{% if sort == 'type' %} 
+					<a href="{{ sort_type }}" class="{{ order|lower }}">{{ column_type }}</a>
+					{% else %}   
+					<a href="{{ sort_type }}">{{ column_type }}</a>
+					{% endif %}</td>
+					<td class="text-left">{% if sort == 'status' %} 
+					<a href="{{ sort_type }}" class="{{ order|lower }}">{{ column_status }}</a>
+					{% else %}   
+					<a href="{{ sort_type }}">{{ column_status }}</a>
+					{% endif %}</td>
+				  <td class="text-left">{{ column_store }}</td>
+				  <td class="text-right">{{ column_action }}</td>
+				</tr>
+				</thead>
+				<tbody>
+				{% if templates %} 
+				  {% for template in templates %} 
+					<tr>
+					  <td style="text-align: center;">{% if template.selected %} 
+						<input type="checkbox" name="selected[]" value="{{ template.sms_template_id }}" checked="checked" />
+						{% else %}   
+						<input type="checkbox" name="selected[]" value="{{ template.sms_template_id }}" />
+						{% endif %}</td>
+					 <td class="text-left">{{ template.type }}</td>
+					  <td class="text-left">{{template.status=='1' ? 'Active' : 'Inactive' }}</td>
+					  <td class="text-left">{{ template.store }}</td>
+					  <td class="text-right">{% for action in template.action %} 
+						[ <a href="{{ action.link }}">{{ action.name }}</a> ]<br />
+						{% endfor %} 
+					</tr>
+				  {% endfor %}
+				{% else %}   
+				  <tr>
+					<td class="text-center" colspan="5">{{ text_no_results }}</td>
+				  </tr>
+				{% endif %}
+				</tbody>
+				</table>
+				<div>
+              <div class="col-sm-6 text-left">{{ pagination }}</div>
+              <div class="col-sm-6 text-right">{{ results }}</div>
+            </div>
+			</div>
+			
+			<div class="tab-pane table-responsive" id="admin">
+			<div class="pull-right" style="margin-bottom:10px;">
+		      <a href="index.php?route=extension/module/smsalert/insert&user_token={{ user_token }}&customer_notify=0&otp_template=0" title="Add Admin Template" data-toggle="tooltip" class="btn btn-success"><i class="fa fa-plus"></i></a></div>
+			  <table class="table table-bordered table-hover">
+				<thead>
+				<tr>
+				  <td width="1" style="text-align: center;"><input type="checkbox" onclick="$('input[name*=\'selected\']').attr('checked', this.checked);" /></td>
+				 <td class="text-left">{% if sort == 'type' %} 
+					<a href="{{ sort_type }}" class="{{ order|lower }}">{{ column_type }}</a>
+					{% else %}   
+					<a href="{{ sort_type }}">{{ column_type }}</a>
+					{% endif %}</td>
+					<td class="text-left">{% if sort == 'status' %} 
+					<a href="{{ sort_type }}" class="{{ order|lower }}">{{ column_status }}</a>
+					{% else %}   
+					<a href="{{ sort_type }}">{{ column_status }}</a>
+					{% endif %}</td>
+				  <td class="text-left">{{ column_store }}</td>
+				  <td class="text-right">{{ column_action }}</td>
+				</tr>
+				</thead>
+				<tbody>
+				{% if templates %} 
+				  {% for template in templates %} 
+					<tr>
+					  <td style="text-align: center;">{% if template.selected %} 
+						<input type="checkbox" name="selected[]" value="{{ template.sms_template_id }}" checked="checked" />
+						{% else %}   
+						<input type="checkbox" name="selected[]" value="{{ template.sms_template_id }}" />
+						{% endif %}</td>
+					  <td class="text-left">{{ template.type }}</td>
+					  <td class="text-left">{{template.status=='1' ? 'Active' : 'Inactive' }}</td>
+					  <td class="text-left">{{ template.store }}</td>
+					  <td class="text-right">{% for action in template.action %} 
+						[ <a href="{{ action.link }}">{{ action.name }}</a> ]<br />
+						{% endfor %} 
+					</tr>
+				  {% endfor %}
+				{% else %}   
+				  <tr>
+					<td class="text-center" colspan="5">{{ text_no_results }}</td>
+				  </tr>
+				{% endif %}
+				</tbody>
+				</table>
+				<div>
+              <div class="col-sm-6 text-left">{{ pagination }}</div>
+              <div class="col-sm-6 text-right">{{ results }}</div>
+            </div>
+			</div>
+
+            <!--otp settings-->
+				<div class="tab-pane table-responsive" id="otp">
+				<div class="pull-right" style="margin-bottom:10px;">
+		      <a href="index.php?route=extension/module/smsalert/insert&user_token={{ user_token }}&customer_notify=0&otp_template=1" title="Add OTP Template" data-toggle="tooltip" class="btn btn-success"><i class="fa fa-plus"></i></a></div>
+					 <table class="table table-bordered table-hover">
+			 <table class="table table-bordered table-hover">
+				<thead>
+				<tr>
+				  <td width="1" style="text-align: center;"><input type="checkbox" onclick="$('input[name*=\'selected\']').attr('checked', this.checked);" /></td>
+				 <td class="text-left">{% if sort == 'type' %} 
+					<a href="{{ sort_type }}" class="{{ order|lower }}">{{ column_type }}</a>
+					{% else %}   
+					<a href="{{ sort_type }}">{{ column_type }}</a>
+					{% endif %}</td>
+					<td class="text-left">{% if sort == 'status' %} 
+					<a href="{{ sort_type }}" class="{{ order|lower }}">{{ column_status }}</a>
+					{% else %}   
+					<a href="{{ sort_type }}">{{ column_status }}</a>
+					{% endif %}</td>
+				  <td class="text-left">{{ column_store }}</td>
+				  <td class="text-right">{{ column_action }}</td>
+				</tr>
+				</thead>
+				<tbody>
+				{% if templates %} 
+				  {% for template in templates %} 
+					<tr>
+					  <td style="text-align: center;">{% if template.selected %} 
+						<input type="checkbox" name="selected[]" value="{{ template.sms_template_id }}" checked="checked" />
+						{% else %}   
+						<input type="checkbox" name="selected[]" value="{{ template.sms_template_id }}" />
+						{% endif %}</td>
+					  <td class="text-left">{{ template.type }}</td>
+					  <td class="text-left">{{template.status=='1' ? 'Active' : 'Inactive' }}</td>
+					  <td class="text-left">{{ template.store }}</td>
+					  <td class="text-right">{% for action in template.action %} 
+						[ <a href="{{ action.link }}">{{ action.name }}</a> ]<br />
+						{% endfor %} 
+					</tr>
+				  {% endfor %}
+				{% else %}   
+				  <tr>
+					<td class="text-center" colspan="5">{{ text_no_results }}</td>
+				  </tr>
+				{% endif %}
+				</tbody>
+				</table>
+<div>
+              <div class="col-sm-6 text-left">{{ pagination }}</div>
+              <div class="col-sm-6 text-right">{{ results }}</div>
+            </div>				
+				</div>
+			<!--/-otp settings-->
+
+			<!--advanced settings-->
+				<div class="tab-pane table-responsive" id="advance">
+					 <table class="table table-bordered table-hover">
+						<tbody>
+						<tr>
+							<td><strong>{{text_enable_payment}}</strong></td>
+							<td>
+						<div class="col-sm-10">
+					<div class="well well-sm" style="height: 150px; overflow: auto;"> {% for method in payment_methods %}
+                      <div class="checkbox">
+                        <label>{% if selected_payment_methods is empty %}
+                         <input type="checkbox" name="list_payment_methods[]" value="{{ method }}" checked="checked" />
+						 {{ method }}
+						  {% else %}
+						{% if method in selected_payment_methods %}
+                          <input type="checkbox" name="list_payment_methods[]" value="{{ method }}" checked="checked" />
+                          {{ method }}
+                          {% else %}
+                          <input type="checkbox" name="list_payment_methods[]" value="{{ method }}" />
+                          {{ method }}
+                          {% endif %}{% endif %} </label>
+                      </div>
+                      {% endfor %} </div>
+								  <input type="hidden" name="smsalert_payment_method" id="smsalert_payment_method"/>
+								</div>
+							</td>
+						</tr>
+						<tr class="top-border">
+							<td class="td-padding"><strong>Set OTP Verify Button Text</strong></td>
+							<td class="td-padding">
+								<div class="col-sm-10">
+								{% if smsalert_button_text != '' %}
+								<input type="text" name="smsalert_button_text" value="{{ smsalert_button_text }}" id="smsalert_button_text" class="form-control"/>
+								 {% else %}
+								 <input type="text" name="smsalert_button_text" value="Click here to verify your phone" id="smsalert_button_text" class="form-control"/>
+								  {% endif %}
+								  </div>
+							</td>
+						</tr>
+						<tr class="top-border">
+<td colspan="2" class="td-padding">
+<div class="col-sm-3"><strong>OTP Re-send Timer</strong></div><div class="col-sm-2"> <input type="number" name="smsalert_resend_timer" id="smsalert_resend_timer" min="15" max="300" value="{{smsalert_resend_timer}}" style="width: 36%;"> seconds</div><div class="col-sm-3"> <strong>Max OTP Re-send Allowed</strong> </div><div class="col-sm-2">
+<input type="number" name="smsalert_resend_allowed" id="smsalert_resend_allowed" min="1" max="10" value="{{smsalert_resend_allowed}}" style="width: 36%;"> times
+				</div>
+	</td>
+		</tr>
+						<tr class="top-border">
+							<td colspan="2" class="td-padding">
+<div class="col-sm-2"><strong>Send Review SMS after</strong></div><div class="col-sm-2"> <input type="number" name="smsalert_schedule_day" id="smsalert_schedule_day" min="1" max="30" value="{{smsalert_schedule_day}}" style="width: 36%;"> days</div><div class="col-sm-2"> <strong>When order is marked as </strong></div><div class="col-sm-2">
+				<select name="smsalert_schedule_status" id="smsalert_schedule_status" class="form-control">
+                  {% for order_status in order_statuses %} 
+					  {% if order_status.order_status_id == smsalert_schedule_status %} 
+					  <option value="{{ order_status.order_status_id }}" selected="selected">{{ order_status.name }}</option>
+					  {% else %}
+					  <option value="{{ order_status.order_status_id }}">{{ order_status.name }}</option>
+					  {% endif %}
+					{% endfor %}
+								  </select>
+								</div>
+					<div class="col-sm-2">  <input type="checkbox" name="time_checkbox" id="time_checkbox" class="form-control" {{smsalert_schedule_time_checkbox=='1' ? 'checked' : '' }} /> <span style=" margin-left: 1.5em;display: block;margin-top: -1.4em;  "> Send At
+				</span>
+				<input type="hidden"  id="smsalert_schedule_time_checkbox" name="smsalert_schedule_time_checkbox" value="{{smsalert_schedule_time_checkbox}}"></div><div class="col-sm-2"><input type="time" name="smsalert_schedule_time" id="smsalert_schedule_time" value="{{smsalert_schedule_time}}" {{smsalert_schedule_time_checkbox!='1' ? 'readonly' : '' }}></div></td>
+						</tr>
+						<tr class="top-border">
+							<td><strong>Email Alerts</strong></td>
+							<td>
+								<div class="col-sm-10">
+								<input type="text" name="smsalert_alert_email" value="{{ smsalert_alert_email }}" id="smsalert_alert_email" class="form-control"/>
+								  </div>
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Enable Short Url</strong></td>
+							<td>
+								<div class="col-sm-10">
+								  <input type="checkbox" name="enable_short_url" id="enable_short_url" class="form-control" {{smsalert_enable_short_url=='1' ? 'checked' : '' }} />
+								  <input type="hidden"  id="smsalert_enable_short_url" name="smsalert_enable_short_url" value="{{smsalert_enable_short_url}}">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Disable default login form</strong></td>
+							<td>
+								<div class="col-sm-10">
+								  <input type="checkbox" name="disable_default_login" id="disable_default_login" class="form-control" {{smsalert_disable_default_login=='1' ? 'checked' : '' }} />
+								  <input type="hidden"  id="smsalert_disable_default_login" name="smsalert_disable_default_login" value="{{smsalert_disable_default_login}}">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Allow multiple accounts with same mobile number</strong></td>
+							<td>
+								<div class="col-sm-10">
+								  <input type="checkbox" name="allow_same_mobile" id="allow_same_mobile" class="form-control" {{smsalert_allow_same_mobile=='1' ? 'checked' : '' }} />
+								  <input type="hidden"  id="smsalert_allow_same_mobile" name="smsalert_allow_same_mobile" value="{{smsalert_allow_same_mobile}}">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td>
+							<div class="col-sm-10">
+								<button type="button" id="btn_adv_setting" class="btn btn-primary button-update" {{smsalert_auth_secret!='' ? '' : 'disabled=true' }}><i class="fa fa-save"></i></button>
+							</div>
+					  
+							</td>
+						</tr>
+						</tbody>
+					  </table>
+					  
+					  
+				</div>
+			<!--/-advanced settings-->
+			<div class="tab-pane table-responsive" id="subscribe">
+					<div class="table-responsive">
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <td class="text-left">{{ column_customer }}</td>
+        <td class="text-left">{{ column_product }}</td>  
+        <td class="text-left">{{ column_date_added }}</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% if products %}
+      {% for product in products %}
+      <tr>
+
+        <td class="text-left" style="max-width:200px;">
+          <table class="table table-bordered table-hover"  style="min-width:250px;float:left;">
+              <tr>
+                <td>
+                  {% if product.customer_id > 0 %}
+                  #{{product.customer_id}} <a type="button" class="register btn btn-success badge badge-light">{{text_register}}</a>
+                  {% else %}
+                  <a type="button" class="register btn btn-success badge badge-light">{{text_unregister}}</a>
+                  {% endif %}
+                </td>
+              </tr>
+			  {% if product.customer_id > 0 %}
+              <tr><td><span class="table_icons"><i class="fa fa-user"></i></span> {{product.customer_name}}</td></tr>
+			  {% endif %}
+              <tr><td><span class="table_icons"><i class="fa fa-envelope"></i></span> {{product.customer_phone}} {% if product.status > 0 %} <span class="label label-success"><i class="fa fa-check" aria-hidden="true"></i></span> {% else %} <span class="label label-danger"><i class="fa fa-times" aria-hidden="true"></i></span> {% endif %}</td></tr>
+              <tr><td><span class="table_icons"><i class="fa fa-cart"></i></span> {{product.store_name}}</td></tr>
+              {% if product.customer_id > 0 %}
+              <tr><td><a type="button" class="btn btn-success badge badge-light" href="{{product.customer_edit}}" target="_blank">{{text_show_customer}}</a></td></tr>
+              {% endif %}
+          </table>
+        </td>
+
+
+        <td class="text-left cart_product">
+          <table class="table table-bordered table-hover" style="min-width:150px;float:left;">
+            <tr>
+              <td class="text-center"><a href="{{product.product_edit}}" target="_blank">{{product.product_name}}</a>
+              </td>
+            </tr>
+            <tr>
+            
+            <td class="text-center">
+
+              {% if product.product_thumb %}
+              <a href="{{product.product_edit}}" target="_blank"><img src="{{product.product_thumb}}" alt="{{product.product_name}}" title="{{product.product_name}}" class="img-thumbnail" /></a>
+              {% endif %}
+
+            </td>
+          </tr>
+          </table>
+        </td>
+        <td class="text-left">{{ product.date_added }}</td>
+      </tr>
+      {% endfor %}
+      {% else %}
+      <tr>
+        <td class="text-center" colspan="4">{{ text_no_results }}</td>
+      </tr>
+      {% endif %}
+    </tbody>
+  </table>
+  <div>
+              <div class="col-sm-6 text-left">{{ pagination }}</div>
+              <div class="col-sm-6 text-right">{{ results }}</div>
+            </div>
+</div>		  
+				</div>
+				<div class="tab-pane table-responsive" id="support">
+					<div class="col-sm-12">
+					<div class="col-sm-4">
+					  <img class="homepage-grid-icon" src="https://www.smsalert.co.in/logo/www.smsalert.co.in.png">
+					  </div>
+					  <div class="col-sm-8">
+					<p class="text-muted">If you need any help setting up your SMS Alert account or have any other questions, we're here to help you.<br /><br /><b>Email : </b> <a href="email:support@cozyvision.com">support@cozyvision.com</a> <br /><br /><b>Phone : </b> +91 (0) 80-1055-1055.<br /><br />If you want to know what else we can offer you, please visit our website at <a href="https://www.smsalert.co.in/" target="_blank">www.smsalert.co.in</a></p>
+					</div>
+					</div>
+					  
+				</div>
+			
+		  </div>
+		</form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="view/javascript/tagged-input.js" type="text/javascript"></script>
+<script type="text/javascript">
+var getQueryString = function ( field, url ) {
+	var href = url ? url : window.location.href;
+	var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+	var string = reg.exec(href);
+	return string ? string[1] : null;
+};
+var tab = getQueryString('tab');
+if(tab!=null)
+{
+$(".nav-tabs li").removeClass("active");
+$(".tab-content div").removeClass("active");
+$("."+tab).addClass('active');
+$("#"+tab).addClass('active');
+}
+$('#enable_short_url').on('change', function () {
+if($("#enable_short_url").prop('checked') == true){
+    $('#smsalert_enable_short_url').val("1");
+}
+else{
+$('#smsalert_enable_short_url').val("0");
+}
+});
+$('#disable_default_login').on('change', function () {
+if($("#disable_default_login").prop('checked') == true){
+    $('#smsalert_disable_default_login').val("1");
+}
+else{
+$('#smsalert_disable_default_login').val("0");
+}
+});
+$('#allow_same_mobile').on('change', function () {
+if($("#allow_same_mobile").prop('checked') == true){
+    $('#smsalert_allow_same_mobile').val("1");
+}
+else{
+$('#smsalert_allow_same_mobile').val("0");
+}
+});
+$('#time_checkbox').on('change', function () {
+if($("#time_checkbox").prop('checked') == true){
+    $('#smsalert_schedule_time_checkbox').val("1");
+	$('#smsalert_schedule_time').removeAttr('readonly');
+}
+else{
+$('#smsalert_schedule_time_checkbox').val("0");
+$('#smsalert_schedule_time').attr('readonly','readonly');
+}
+});
+var tagInput = new TagsInput({
+		selector: 'smsalert_admin_number',
+		duplicate : false,
+		max : 10,
+	});
+	function addVendor(obj)
+	{
+		if(obj.value == "vendor")
+		{
+			tagInput.addTag(obj.value);
+		}
+	}
+	jQuery(window).keydown(function(event){
+		if(event.keyCode == 13) {
+		  event.preventDefault();
+		  return false;
+		}
+	});
+
+	var adminnumber = $('#smsalert_admin_number').val();
+	var number = (adminnumber!='') ? adminnumber.split(",") : [];
+	if(number.length > 0){
+		tagInput.addData(number);
+	}
+	
+$('#button-update,#btn_adv_setting').on('click', function() {
+var selMulti = $.map($("input[name='list_payment_methods[]']:checked"), function (el, i) {
+         return $(el).val();
+     });
+     $("#smsalert_payment_method").val(selMulti.join(","));
+	$.ajax({
+		url: 'index.php?route=extension/module/smsalert/config&user_token={{ user_token }}',
+		type: 'post',
+		data : $('#config input,#advance input, #config select, #advance select, #advance #smsalert_payment_method, #config #smsalert_mobile_pattern'),
+		
+		dataType: 'json',
+		beforeSend: function() {
+			$('#button-update').after('<i class="fa fa-spinner fa-spin"></i>');
+		},
+		success: function(json) {
+			$('.smsalert_alert').remove();
+			if(json['status']=='success')
+			{
+				$('#smsalert_setting_pg').prepend('<div class="alert alert-success smsalert_alert"><i class="fa fa-check-circle"></i> '+json['description']+'<button type="button" class="close" data-dismiss="alert">×</button></div>');
+				location.reload();
+			}
+			$('.fa-spinner').remove();
+			
+			$('#config input').css('border', '1px solid #00ff00');
+			$('#config select').css('border', '1px solid #00ff00');
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+		}
+	});
+	
+	return false;
+});
+
+
+function choseMobPattern(obj){
+	var pattern = $('option:selected', obj).attr('data-pattern');
+	$('#smsalert_mobile_pattern').val(pattern);
+}
+
+
+$('#default_country_code').trigger('change');
+function verifyCredential()
+	{
+	       $("#verify_btn").html("Please Wait...").attr('disabled', 'disabled');
+		   var username = $('#input-auth-key').val();
+		   var password = $('#input-auth-secret').val();
+		  //senderid listing
+		   if(username!='' && password!='')
+		   {		
+				url = "index.php?route=extension/module/smsalert/sender_list&user_token={{ user_token }}";
+				$.ajax({
+				    url: url,
+					type: 'post',
+		            data: {user:username,pwd:password},
+                    dataType: 'json',
+					success: function(response){
+						 if(response.status=='error' && typeof response.description !='undefined' && response.description=='invalid username/password.')
+						 {
+						    $('#smsalert_setting_pg').prepend('<div class="alert alert-danger smsalert_alert"><i class="fa fa-check-circle"></i> Invalid Username/Password.<button type="button" class="close" data-dismiss="alert">×</button></div>');
+						 }
+						 else
+						 if(typeof response.error !='undefined')
+						 {
+						   $('#smsalert_setting_pg').prepend('<div class="alert alert-danger smsalert_alert"><i class="fa fa-check-circle"></i> '+response.error+'<button type="button" class="close" data-dismiss="alert">×</button></div>');
+						 }
+						 else 
+						 {
+							 var senderopt = '';
+							 if(response.status=='error' && typeof response.description.desc !='undefined' && response.description.desc=='no senderid available for your account')
+							 {
+								if(senderopt=='')
+								{
+									senderopt += '<option value="eStore">eStore</option>';
+								}
+							 } 
+							 else if(response.status=='success')
+							 {
+								$(response.description).each(function( index, item) {
+									  if(item.Senderid.approved ===true)
+									  { 
+											senderopt += '<option value="'+item.Senderid.sender+'">'+item.Senderid.sender+'</option>';
+									  }
+								 });
+							   var ele = response.description.shift();
+							  	 
+							}
+							   $('#smsalert_setting_pg').prepend('<div class="alert alert-success smsalert_alert"><i class="fa fa-check-circle"></i> Verified Successfully.<button type="button" class="close" data-dismiss="alert">×</button></div>');
+							   $('#senderid').html(senderopt);
+							   $('#senderid').prop("disabled", false);
+							   $('#button-update').prop("disabled", false);
+							   $('#btn_adv_setting').prop("disabled", false);
+						 }	
+                             $('#verify_btn').html("Verify & Continue").prop("disabled", false);						 
+						  
+                    },
+					error: function(xhr, ajaxOptions, thrownError) {
+			           $('#smsalert_setting_pg').prepend('<div class="alert alert-danger smsalert_alert"><i class="fa fa-check-circle"></i> Invalid Username/Password.<button type="button" class="close" data-dismiss="alert">×</button></div>');
+					   $('#verify_btn').html("Verify & Continue").prop("disabled", false);
+		          }
+                });
+		   }
+		   else{
+		       $('#smsalert_setting_pg').prepend('<div class="alert alert-danger smsalert_alert"><i class="fa fa-check-circle"></i> Username or Password cannot be empty.<button type="button" class="close" data-dismiss="alert">×</button></div>');
+			   $('#verify_btn').html("Verify & Continue").prop("disabled", false);
+		   }
+	}
+function deleteData()
+{ 
+$.ajax({
+		url: 'index.php?route=extension/module/smsalert/config&user_token={{ user_token }}',
+		type: 'post',
+		data : {
+                'smsalert_auth_key' : '',
+                'smsalert_auth_secret' : '',
+                'smsalert_default_senderid' : '',
+                'smsalert_country' : '',
+                'smsalert_mobile_pattern' : '',
+                'smsalert_debug' : '',
+                'module_smsalert_status' : ''
+            },
+		dataType: 'json',
+		success: function(json) {
+			$('.smsalert_alert').remove();
+			if(json['status']=='success')
+			{
+				$('#smsalert_setting_pg').prepend('<div class="alert alert-success smsalert_alert"><i class="fa fa-check-circle"></i> '+json['description']+'<button type="button" class="close" data-dismiss="alert">×</button></div>');
+				location.reload();
+			}
+            },
+		error: function(xhr, ajaxOptions, thrownError) {
+			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+		}
+	});
+}
+</script>
+{{ footer }}
+<style>
+.otp .tags-input-wrapper {float:left;}
+.tags-input-wrapper {background: #fff;padding: 3px;border-radius: 4px;width: 100%;border: 1px solid #ccc;float:right;height:40px;}
+.tags-input-wrapper input {border: none;background: transparent;outline: none;width: 150px;height: 32px;}
+.tags-input-wrapper .tag {display: inline-block;background-image: linear-gradient(to bottom, white 0%, #eeeeee 100%);color: #333333;border-radius: 40px;padding: 3px 0px 3px 5px;margin-right: 5px;border: 1px solid #c7c7c7;}
+.tags-input-wrapper .tag a { margin: 0px 7px 0px 5px;display: inline-block;cursor: pointer;color: #000;vertical-align: text-bottom;}
+input[readonly] {
+    background: #ddd;
+}
+.table tbody > tr > td {
+    border: none !important;
+}
+.top-border {
+    border-top: 1px dashed #b4b9be;
+}
+.td-padding {
+    padding: 30px !important;
+}
+</style>

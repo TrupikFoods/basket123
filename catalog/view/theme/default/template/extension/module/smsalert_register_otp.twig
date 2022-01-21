@@ -1,0 +1,271 @@
+<div id="SMSAlertCheckRegOTPModal" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static" style="display:none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Verification OTP</h4>
+      </div>
+      <div class="modal-body">
+	  <div class="form-group">
+        <input type="text" name="smsalert_reg_otp_code" placeholder="Enter OTP" id="smsalert_reg_otp_code" class="form-control" autocomplete="off" />
+		</div>
+			<br/>
+			<button type="button" class="btn btn-default" id="smsalert_reg_resend_btn">Resend</button>
+			<span class="reg_timer"></span>
+			
+			<input type="button" id="smsalert_otp_reg_checkout_verify_button" value="Validate OTP" class="btn btn-primary pull-right" />
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script type="text/javascript">
+var interval;
+$(document).ready(function() {
+	$('#button-register').unbind('click').bind('click', function() {
+	debugger;
+		var temp = '{{otp_for_register}}';
+		if(temp=='1')
+		{
+			$(document).undelegate( '#button-register', "click");
+			$('#SMSAlertCheckRegOTPModal').modal('show');
+			sendOTPForRegister();
+			return false;
+		}
+		
+		procceedRegisterConfirm();
+		
+	});
+	
+	
+	$('#smsalert_otp_reg_checkout_verify_button').unbind('click').bind('click', function()
+	{
+		verifyRegisterOTP();
+	});
+	
+	$('#smsalert_reg_resend_btn').unbind('click').bind('click', function(){
+		sendOTPForRegister();
+		return false;
+	});
+});
+
+
+
+function reg_timerCount()
+{
+	var resend_timer = '{{resend_timer}}';
+	var timer = function(secs){
+		var sec_num = parseInt(secs, 10);
+		var hours   = Math.floor(sec_num / 3600) % 24;
+		var minutes = Math.floor(sec_num / 60) % 60;
+		var seconds = sec_num % 60;
+		hours = hours < 10 ? "0" + hours : hours;
+		minutes = minutes < 10 ? "0" + minutes : minutes;
+		seconds = seconds < 10 ? "0" + seconds : seconds;
+		return [hours,minutes,seconds].join(":")
+	};
+	$(".reg_timer").css('display','inline');
+	$(".reg_timer").html(timer(resend_timer)+" sec");
+	var counter = resend_timer;
+	 interval = setInterval(function() {
+		counter--;
+		 var places = (counter < 10 ? "0" : "");
+		 $(".reg_timer").html(timer(counter)+" sec");
+		if (counter == 0) {
+			$(".reg_timer").css('display','none');
+			var cssString = "pointer-events: auto; cursor: pointer; opacity: 1;"; 
+			$("#smsalert_otp_reg_checkout_verify_button").attr('style',cssString);
+			clearInterval(interval);
+		}
+		else
+		{
+			var cssString = "pointer-events: none; cursor: default; opacity: 1;";
+			$("#smsalert_otp_reg_checkout_verify_button").attr('style',cssString);
+		}
+	}, 1000);
+}
+jQuery(document).on("click", ".close",function(){
+clearInterval(interval);
+});
+function verifyRegisterOTP()
+{
+	
+	$('.alert-dismissible, .text-danger').remove();
+	var code = $('#smsalert_reg_otp_code').val();
+	if(code=='')
+	{
+		$('#SMSAlertCheckRegOTPModal .modal-body').prepend( '<div class="alert alert-danger alert-dismissible"><strong>{{blank_otp}}</strong></div>' );
+		return false;
+	}
+	var mobile = $('#input-payment-telephone').val();
+
+	$.ajax({
+        url: 'index.php?route=extension/module/smsalert&otp_event=verify&phone='+mobile,
+        type: 'post',
+        data: {'code': code},
+        dataType: 'json',
+        success: function(json) {
+			if(json['status']=='success' && json['description']['desc']=='Code Matched successfully.')
+			{
+				$('#SMSAlertCheckRegOTPModal .modal-body').prepend( '<div class="alert alert-success alert-dismissible"><strong>'+json['description']['desc']+'</strong></div>' );
+				procceedRegisterConfirm();
+				$('#SMSAlertCheckRegOTPModal').modal('hide');
+				
+			}
+			else
+			{
+				$('#SMSAlertCheckRegOTPModal .modal-body').prepend( '<div class="alert alert-danger alert-dismissible"><strong>'+json['description']['desc']+'</strong></div>' );
+			}
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+    });
+}
+
+
+function sendOTPForRegister()
+{
+var mobile = $('#input-payment-telephone').val();
+	$.ajax({
+        url: 'index.php?route=extension/module/smsalert&otp_event=register&phone='+mobile,
+        type: 'post',
+       dataType: 'json',
+        success: function(json) {
+			$('.alert-dismissible, .text-danger').remove();
+			if(json['status']=='success')
+			{
+				$('#SMSAlertCheckRegOTPModal .modal-body').prepend( '<div class="alert alert-success alert-dismissible"><strong>Success! OTP sent Successfully to '+json['telephone']+'</strong> .</div>' );
+				reg_timerCount();
+			}
+			else
+			{
+				$('#SMSAlertCheckRegOTPModal .modal-body').prepend( '<div class="alert alert-danger alert-dismissible"><strong>Error! OTP sent Failed</strong> .</div>' );
+			}
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+    });
+	
+	
+}
+
+
+function procceedRegisterConfirm()
+{
+       $.ajax({
+        url: 'index.php?route=checkout/register/save',
+        type: 'post',
+        data: $('#collapse-payment-address input[type=\'text\'], #collapse-payment-address input[type=\'date\'], #collapse-payment-address input[type=\'datetime-local\'], #collapse-payment-address input[type=\'time\'], #collapse-payment-address input[type=\'password\'], #collapse-payment-address input[type=\'hidden\'], #collapse-payment-address input[type=\'checkbox\']:checked, #collapse-payment-address input[type=\'radio\']:checked, #collapse-payment-address textarea, #collapse-payment-address select'),
+        dataType: 'json',
+        beforeSend: function() {
+			$('#button-register').button('loading');
+		},
+        success: function(json) {
+            $('.alert-dismissible, .text-danger').remove();
+            $('.form-group').removeClass('has-error');
+
+            if (json['redirect']) {
+                location = json['redirect'];
+            } else if (json['error']) {
+                $('#button-register').button('reset');
+
+                if (json['error']['warning']) {
+                    $('#collapse-payment-address .panel-body').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> ' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+                }
+
+				for (i in json['error']) {
+					var element = $('#input-payment-' + i.replace('_', '-'));
+
+					if ($(element).parent().hasClass('input-group')) {
+						$(element).parent().after('<div class="text-danger">' + json['error'][i] + '</div>');
+					} else {
+						$(element).after('<div class="text-danger">' + json['error'][i] + '</div>');
+					}
+				}
+
+				// Highlight any found errors
+				$('.text-danger').parent().addClass('has-error');
+            } else {
+                                var shipping_address = $('#payment-address input[name=\'shipping_address\']:checked').prop('value');
+
+                if (shipping_address) {
+                    $.ajax({
+                        url: 'index.php?route=checkout/shipping_method',
+                        dataType: 'html',
+                        success: function(html) {
+							// Add the shipping address
+                            $.ajax({
+                                url: 'index.php?route=checkout/shipping_address',
+                                dataType: 'html',
+                                success: function(html) {
+                                    $('#collapse-shipping-address .panel-body').html(html);
+
+									$('#collapse-shipping-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 3: Delivery Details <i class="fa fa-caret-down"></i></a>');
+                                },
+                                error: function(xhr, ajaxOptions, thrownError) {
+                                    alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                                }
+                            });
+
+							$('#collapse-shipping-method .panel-body').html(html);
+
+							$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 4: Delivery Method <i class="fa fa-caret-down"></i></a>');
+
+   							$('a[href=\'#collapse-shipping-method\']').trigger('click');
+
+							$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('Step 4: Delivery Method');
+							$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('Step 5: Payment Method');
+							$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
+                        },
+                        error: function(xhr, ajaxOptions, thrownError) {
+                            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                        }
+                    });
+                } else {
+                    $.ajax({
+                        url: 'index.php?route=checkout/shipping_address',
+                        dataType: 'html',
+                        success: function(html) {
+                            $('#collapse-shipping-address .panel-body').html(html);
+
+							$('#collapse-shipping-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 3: Delivery Details <i class="fa fa-caret-down"></i></a>');
+
+							$('a[href=\'#collapse-shipping-address\']').trigger('click');
+
+							$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('Step 4: Delivery Method');
+							$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('Step 5: Payment Method');
+							$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
+                        },
+                        error: function(xhr, ajaxOptions, thrownError) {
+                            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                        }
+                    });
+                }
+                
+                $.ajax({
+                    url: 'index.php?route=checkout/payment_address',
+                    dataType: 'html',
+                    complete: function() {
+                        $('#button-register').button('reset');
+                    },
+                    success: function(html) {
+                        $('#collapse-payment-address .panel-body').html(html);
+
+						$('#collapse-payment-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-payment-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 2: Billing Details <i class="fa fa-caret-down"></i></a>');
+                    },
+                    error: function(xhr, ajaxOptions, thrownError) {
+                        alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                    }
+                });
+            }
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+    });
+}
+</script>

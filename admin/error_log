@@ -1,0 +1,442 @@
+[30-Jan-2021 06:53:07 UTC] PHP Warning:  require_once(/var/app/current/system/startup.php): failed to open stream: No such file or directory in /home/trupik/public_html/www.trupikfood.com/admin/index.php on line 17
+[30-Jan-2021 06:53:07 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/app/current/system/startup.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/trupik/public_html/www.trupikfood.com/admin/index.php on line 17
+[30-Jan-2021 06:55:36 UTC] PHP Warning:  require_once(/var/app/current/system/startup.php): failed to open stream: No such file or directory in /home/trupik/public_html/www.trupikfood.com/admin/index.php on line 17
+[30-Jan-2021 06:55:36 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/app/current/system/startup.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/trupik/public_html/www.trupikfood.com/admin/index.php on line 17
+[30-Jan-2021 10:20:23 UTC] PHP Warning:  require_once(/var/app/current/system/startup.php): failed to open stream: No such file or directory in /home/trupik/public_html/www.trupikfood.com/admin/index.php on line 17
+[30-Jan-2021 10:20:23 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/app/current/system/startup.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/trupik/public_html/www.trupikfood.com/admin/index.php on line 17
+[30-Jan-2021 10:20:32 UTC] PHP Warning:  require_once(/var/app/current/system/startup.php): failed to open stream: No such file or directory in /home/trupik/public_html/www.trupikfood.com/admin/index.php on line 17
+[30-Jan-2021 10:20:32 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/app/current/system/startup.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/trupik/public_html/www.trupikfood.com/admin/index.php on line 17
+[30-Jan-2021 10:25:58 UTC] PHP Warning:  require_once(/var/app/current/system/startup.php): failed to open stream: No such file or directory in /home/trupik/public_html/www.trupikfood.com/admin/index.php on line 17
+[30-Jan-2021 10:25:58 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/app/current/system/startup.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/trupik/public_html/www.trupikfood.com/admin/index.php on line 17
+[01-Feb-2021 10:03:54 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 10:04:05 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 10:04:43 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 10:19:33 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 10:20:04 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 10:21:47 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 10:22:00 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 10:24:19 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 10:28:45 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 10:42:15 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php:85
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(281): PHPExcel_Reader_Excel2007->canRead('/tmp/phpKU43kX')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(206): PHPExcel_IOFactory::createReaderForFile('/tmp/phpKU43kX')
+#2 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(6115): PHPExcel_IOFactory::identify('/tmp/phpKU43kX')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->upload('/tmp/phpKU43kX', '1')
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.ph in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php on line 85
+[01-Feb-2021 10:42:58 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php:85
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(281): PHPExcel_Reader_Excel2007->canRead('/tmp/phpzlB5OP')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(206): PHPExcel_IOFactory::createReaderForFile('/tmp/phpzlB5OP')
+#2 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(6115): PHPExcel_IOFactory::identify('/tmp/phpzlB5OP')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->upload('/tmp/phpzlB5OP', '1')
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.ph in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php on line 85
+[01-Feb-2021 10:49:35 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php:85
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(281): PHPExcel_Reader_Excel2007->canRead('/tmp/phpAp5hVD')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(206): PHPExcel_IOFactory::createReaderForFile('/tmp/phpAp5hVD')
+#2 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(6115): PHPExcel_IOFactory::identify('/tmp/phpAp5hVD')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->upload('/tmp/phpAp5hVD', '1')
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.ph in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php on line 85
+[01-Feb-2021 10:49:43 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmpMH...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '153')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[01-Feb-2021 10:49:55 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmpbK...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '153')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[01-Feb-2021 11:02:36 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php:85
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(281): PHPExcel_Reader_Excel2007->canRead('/tmp/phpqUBkju')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(206): PHPExcel_IOFactory::createReaderForFile('/tmp/phpqUBkju')
+#2 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(6115): PHPExcel_IOFactory::identify('/tmp/phpqUBkju')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->upload('/tmp/phpqUBkju', '1')
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.ph in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php on line 85
+[01-Feb-2021 11:05:11 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 11:05:29 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 11:09:03 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php:85
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(281): PHPExcel_Reader_Excel2007->canRead('/tmp/php1f0ji1')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(206): PHPExcel_IOFactory::createReaderForFile('/tmp/php1f0ji1')
+#2 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(6115): PHPExcel_IOFactory::identify('/tmp/php1f0ji1')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->upload('/tmp/php1f0ji1', '1')
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.ph in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php on line 85
+[01-Feb-2021 11:09:09 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmpQf...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '153')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[01-Feb-2021 11:09:38 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 11:10:44 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 11:11:48 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 11:13:22 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 11:18:07 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmpaO...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '153')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[01-Feb-2021 11:19:23 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php:85
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(281): PHPExcel_Reader_Excel2007->canRead('/tmp/php8Jr9sa')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(206): PHPExcel_IOFactory::createReaderForFile('/tmp/php8Jr9sa')
+#2 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(6115): PHPExcel_IOFactory::identify('/tmp/php8Jr9sa')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->upload('/tmp/php8Jr9sa', '1')
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.ph in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php on line 85
+[01-Feb-2021 11:41:28 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmpkV...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '153')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[01-Feb-2021 11:41:42 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmp5l...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '153')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[01-Feb-2021 11:41:47 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmpxy...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '153')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[01-Feb-2021 11:52:42 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmpJs...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '153')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[01-Feb-2021 11:53:07 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmpBe...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '153')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[01-Feb-2021 12:19:46 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php:85
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(281): PHPExcel_Reader_Excel2007->canRead('/tmp/phpQ0xchp')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(206): PHPExcel_IOFactory::createReaderForFile('/tmp/phpQ0xchp')
+#2 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(6115): PHPExcel_IOFactory::identify('/tmp/phpQ0xchp')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->upload('/tmp/phpQ0xchp', '1')
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.ph in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php on line 85
+[01-Feb-2021 12:21:18 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 12:24:02 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 12:24:49 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 12:24:58 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 12:33:36 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[01-Feb-2021 12:36:48 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[02-Feb-2021 05:55:02 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmpHC...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '153')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[02-Feb-2021 06:43:07 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmpJU...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '153')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[02-Feb-2021 06:43:25 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php:85
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(281): PHPExcel_Reader_Excel2007->canRead('/tmp/php1hBBdM')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(206): PHPExcel_IOFactory::createReaderForFile('/tmp/php1hBBdM')
+#2 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(6115): PHPExcel_IOFactory::identify('/tmp/php1hBBdM')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->upload('/tmp/php1hBBdM', '1')
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.ph in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php on line 85
+[02-Feb-2021 07:19:52 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmpOk...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '153')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[02-Feb-2021 07:20:05 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php:85
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(281): PHPExcel_Reader_Excel2007->canRead('/tmp/php6A0xKx')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(206): PHPExcel_IOFactory::createReaderForFile('/tmp/php6A0xKx')
+#2 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(6115): PHPExcel_IOFactory::identify('/tmp/php6A0xKx')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->upload('/tmp/php6A0xKx', '1')
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.ph in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php on line 85
+[02-Feb-2021 07:42:03 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmp4X...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('u', NULL, NULL, '1', '3')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 /h in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[02-Feb-2021 09:59:03 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php:85
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(281): PHPExcel_Reader_Excel2007->canRead('/tmp/phpsigfGk')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/IOFactory.php(206): PHPExcel_IOFactory::createReaderForFile('/tmp/phpsigfGk')
+#2 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(6115): PHPExcel_IOFactory::identify('/tmp/phpsigfGk')
+#3 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->upload('/tmp/phpsigfGk', '1')
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.ph in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Reader/Excel2007.php on line 85
+[02-Feb-2021 10:15:26 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[02-Feb-2021 12:26:21 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php:61
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerMarketplaceInstall->unzip()
+#1 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home/trupik/public_html/www.trupikbasket.com/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home/trupik/public_html/www.trupikbasket.com/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home/trupik/public_html/www.trupikbasket.com/system/startup.php(104): require_once('/home/trupik/pu...') in /home/trupik/public_html/www.trupikbasket.com/admin/controller/marketplace/install.php on line 61
+[13-Feb-2021 06:16:23 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/www.trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmpYX...')
+#1 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '155')
+#2 /home/trupik/public_html/www.trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/www.trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/www.trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/www.trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 in /home/trupik/public_html/www.trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[15-Feb-2021 05:28:25 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 14030848 bytes) in /home/trupik/public_html/www.trupikbasket.com/system/library/image.php on line 45
+[07-Jun-2021 06:59:10 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmpFr...')
+#1 /home/trupik/public_html/trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '169')
+#2 /home/trupik/public_html/trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 /home/trupik/public_html/tr in /home/trupik/public_html/trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
+[07-Jun-2021 06:59:16 UTC] PHP Fatal error:  Uncaught Error: Class 'ZipArchive' not found in /home/trupik/public_html/trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php:220
+Stack trace:
+#0 /home/trupik/public_html/trupikbasket.com/admin/model/extension/export_import.php(9302): PHPExcel_Writer_Excel2007->save('/tmp/phpxltmpnh...')
+#1 /home/trupik/public_html/trupikbasket.com/system/storage/modification/system/engine/loader.php(248): ModelToolExportImport->download('p', NULL, NULL, '60', '169')
+#2 /home/trupik/public_html/trupikbasket.com/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#3 /home/trupik/public_html/trupikbasket.com/admin/controller/extension/export_import.php(87): Proxy->__call('download', Array)
+#4 /home/trupik/public_html/trupikbasket.com/system/storage/modification/system/engine/action.php(79): ControllerExtensionExportImport->download()
+#5 /home/trupik/public_html/trupikbasket.com/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 /home/trupik/public_html/tr in /home/trupik/public_html/trupikbasket.com/system/library/export_import/Classes/PHPExcel/Writer/Excel2007.php on line 220
